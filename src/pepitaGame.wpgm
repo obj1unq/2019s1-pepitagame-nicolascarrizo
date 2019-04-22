@@ -22,7 +22,11 @@ program PepitaGame {
 	keyboard.h().onPressDo { game.say(pepita, "Hola chiques!") }
 
 	keyboard.v().onPressDo { pepita.volaHacia(villaGesell) }
-	keyboard.b().onPressDo { pepita.volaHacia(buenosAires) }
+	keyboard.b().onPressDo { pepita.volaHacia(buenosAires)}
+	keyboard.m().onPressDo { pepita.volaHacia(manzana)
+		                     pepita.image() }
+	keyboard.a().onPressDo { pepita.volaHacia(alpiste)
+		                     pepita.image() }
 
 	keyboard.up().onPressDo { pepita.move(pepita.position().up(1)) }
 	keyboard.down().onPressDo { pepita.move(pepita.position().down(1)) }
