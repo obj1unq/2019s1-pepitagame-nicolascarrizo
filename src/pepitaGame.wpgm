@@ -23,12 +23,12 @@ program PepitaGame {
 	
 // COLISIONES
     
-   game.whenCollideDo(pepona, {jugador => game.say(pepona, "Hola pepona")})
-   game.whenCollideDo(pipa, {jugador => game.say(pipa, "Hola pipa")})
-   game.whenCollideDo(manzana, {jugador => jugador.agarrar(manzana)})	
-   game.whenCollideDo(alpiste, {jugador => jugador.agarrar(alpiste)})
-   game.whenCollideDo(pepita, {jugador => jugador.darComida(pepita, jugador.alimento())})	
-	
+   game.whenCollideDo(pepona, {roque => game.say(pepona, "Hola pepona")})
+   game.whenCollideDo(pipa, {roque => game.say(pipa, "Hola pipa")})
+   game.whenCollideDo(manzana, {roque => roque.agarrar(manzana)})	
+   game.whenCollideDo(alpiste, {roque => roque.agarrar(alpiste)})
+   game.whenCollideDo(pepita, {roque => roque.darComida(pepita, roque.alimento())})	
+   	
 
 //	TECLADADO
 	keyboard.h().onPressDo { game.say(pepita, "Hola chiques!") }
