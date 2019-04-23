@@ -54,6 +54,7 @@ object roque {
 	var property alimento = noHayComida
 
 	method image() {
+		
 		return "jugador.png"
 	}
 
@@ -61,7 +62,6 @@ object roque {
 		return "roque"
 	}
 
-	
 	method agarrar(comida) {
 		self.alimento().tirar()
 		game.removeVisual(comida)
