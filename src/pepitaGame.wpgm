@@ -26,8 +26,10 @@ program PepitaGame {
    game.whenCollideDo(pepona, {jugador => game.say(pepona, "Hola pepona")})
    game.whenCollideDo(pipa, {jugador => game.say(pipa, "Hola pipa")})
    game.whenCollideDo(manzana, {jugador => jugador.agarrar(manzana)})	
-   game.whenCollideDo(alpiste, {jugador => jugador.agarrar(alpiste)})
-   game.whenCollideDo(pepita, {jugador => jugador.darComida(pepita, jugador.alimento())})	
+   game.whenCollideDo(alpiste, {jugador => jugador.agarrar(alpiste) })
+ //game.whenCollideDo(cosa, {cosa => cosa.colisionarCon(roque) }
+   game.whenCollideDo(pepita, {jugador => jugador.darComida(pepita, jugador.alimento())})
+   	
 	
 
 //	TECLADADO
