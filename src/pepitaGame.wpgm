@@ -30,7 +30,7 @@ program PepitaGame {
    game.whenCollideDo(pepita, {roque => roque.darComida(pepita, roque.alimento())})	
    	
 
-//	TECLADADO
+//	TECLADO
 	keyboard.h().onPressDo { game.say(pepita, "Hola chiques!") }
 
 	keyboard.v().onPressDo { pepita.volaHacia(villaGesell) }
@@ -42,6 +42,7 @@ program PepitaGame {
 	keyboard.down().onPressDo { roque.position(roque.position().down(1)) }
 	keyboard.left().onPressDo { roque.position(roque.position().left(1)) }
 	keyboard.right().onPressDo { roque.position(roque.position().right(1)) }
+	
 		
 //	START
 	game.start()
