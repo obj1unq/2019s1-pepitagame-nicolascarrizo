@@ -3,15 +3,9 @@ import pepita.*
 
 object manzana {
 	method image(){
-		
-		if(pepita.position() == self.position()){
-			
-			return "suelo.png"
-		}else{
 			
 			return "manzana.png"
 		}
-	}
 	
 	method energia() = 80
 	
@@ -22,15 +16,9 @@ object manzana {
 object alpiste {
 
 		method image(){
-		
-		if(pepita.position() == self.position()){
-			
-			return "suelo.png"
-		}else{
-			
+	
 			return "alpiste.png"
 		}
-	}
 	
 	method energia() = 40
 	
