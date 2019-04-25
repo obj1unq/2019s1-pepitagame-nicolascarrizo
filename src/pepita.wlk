@@ -51,8 +51,28 @@ object pepita {
 object roque {
 
 	var property position = game.at(1, 2)
-	var property alimento = noHayComida
+	var  property alimento = noHayComida
 
+   /*  method position(_position){
+    	
+    	position = _position
+    }
+    
+    method position(){
+    	
+    	return position 
+    }
+    
+    method alimento(){
+    	
+    	return alimento
+    }
+    
+    method alimento(_alimento){
+    	
+    	alimento = _alimento
+    }
+*/
 	method image() {
 		
 		return "jugador.png"
@@ -61,8 +81,10 @@ object roque {
 	method nombre() {
 		return "roque"
 	}
+	
+	
 
-	method agarrar(comida) {
+    method agarrar(comida) {
 		self.alimento().tirar()
 		game.removeVisual(comida)
 		alimento = comida

@@ -31,7 +31,7 @@ object alpiste {
 		game.addVisualIn(self, game.at((0.randomUpTo(6).roundUp(0)), (0.randomUpTo(6).roundUp(0))))
 		game.whenCollideDo(self, { roque => roque.agarrar(self)})
 	}
-}
+ }
 
 object noHayComida {
 
