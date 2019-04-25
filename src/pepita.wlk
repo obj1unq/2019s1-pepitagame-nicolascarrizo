@@ -68,9 +68,9 @@ object roque {
     	return alimento
     }
     
-    method alimento(_alimento){
+    method alimento(__alimento){
     	
-    	alimento = _alimento
+    	alimento = __alimento
     }
 */
 	method image() {
