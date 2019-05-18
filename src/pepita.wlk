@@ -18,6 +18,7 @@ object pepita {
 
 	method come(comida) {
 		energia = energia + comida.energia()
+		game.removeVisual(comida)
 	}
 
 	method volaHacia(unaCiudad) {
@@ -48,12 +49,15 @@ object pepita {
 
 }
 
+
+
 object roque {
 
 	var property position = game.at(1, 2)
 	var  property alimento = noHayComida
 
-   /*  method position(_position){
+	
+	/*  method position(_position){
     	
     	position = _position
     }
@@ -93,8 +97,17 @@ object roque {
 	method darComida(ave, comida) {
 		ave.come(comida)
 	}
+	
+	method dejaComida(comida){
+		
+		game.addVisualIn(comida, position)
+	}
 
 }
+
+
+
+
 
 object pepona {
 
